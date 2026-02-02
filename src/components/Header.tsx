@@ -1,4 +1,5 @@
 import logo from "../assets/logo.png";
+import { TestTube2, Dna, FlaskConical } from "lucide-react";
 
 type Props = {
   title: string;
@@ -24,6 +25,12 @@ export default function Header({
         </div>
 
         <div className="headerRight">
+          <div className="headerIconRow" aria-hidden="true">
+            <span className="headerIcon"><TestTube2 size={18} /></span>
+            <span className="headerIcon"><Dna size={18} /></span>
+            <span className="headerIcon"><FlaskConical size={18} /></span>
+          </div>
+
           <input className="headerSearch" placeholder="Search topics..." />
           <button className="headerBtn" type="button">
             Admin

@@ -2,6 +2,8 @@ import type { ReactNode } from "react";
 import Header from "./Header";
 import Sidebar from "./Sidebar";
 import type { SidebarItem, SidebarItemKey } from "../types/navigation";
+import BackgroundVideo from "./BackgroundVideo";
+
 
 type Props = {
   title: string;
@@ -20,6 +22,7 @@ export default function Layout({
 }: Props) {
   return (
     <div className="appShell">
+      <BackgroundVideo />
       <Header title={title} />
 
       <div className="bodyShell">
